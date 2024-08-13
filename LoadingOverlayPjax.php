@@ -1,11 +1,11 @@
 <?php
 /**
- * @link https://github.com/timurmelnikov/yii2-loading-overlay
+ * @link https://github.com/ksv2005/yii2-loading-overlay
  * @copyright Copyright (c) 2017 Timur Melnikov
  * @license MIT
  */
 
-namespace timurmelnikov\widgets;
+namespace ksv2005\widgets;
 
 use Yii;
 use yii\widgets\Pjax;
@@ -16,7 +16,7 @@ use yii\web\View;
  */
 class LoadingOverlayPjax extends Pjax
 {
- 
+
     /**
     * @var string Свойство CSS background-color в формате rgba()
     */
@@ -57,7 +57,7 @@ class LoadingOverlayPjax extends Pjax
     * @var string Альтернативный DOM элемент наложения jQuery LoadingOverlay
     */
     public $elementOverlay = '';
-    
+
     private  $_bundle = '';
 
 

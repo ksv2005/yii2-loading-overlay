@@ -1,10 +1,10 @@
 Yii2 виджет-обертка для [jQuery LoadingOverlay](https://gasparesganga.com/labs/jquery-loading-overlay/) 
 ================
 
-[![Latest Stable Version](https://poser.pugx.org/timurmelnikov/yii2-loading-overlay/v/stable)](https://packagist.org/packages/timurmelnikov/yii2-loading-overlay)
-[![Latest Unstable Version](https://poser.pugx.org/timurmelnikov/yii2-loading-overlay/v/unstable)](https://packagist.org/packages/timurmelnikov/yii2-loading-overlay)
-[![Total Downloads](https://poser.pugx.org/timurmelnikov/yii2-loading-overlay/downloads)](https://packagist.org/packages/timurmelnikov/yii2-loading-overlay)
-[![License](https://poser.pugx.org/timurmelnikov/yii2-loading-overlay/license)](https://packagist.org/packages/timurmelnikov/yii2-loading-overlay)
+[![Latest Stable Version](https://poser.pugx.org/ksv2005/yii2-loading-overlay/v/stable)](https://packagist.org/packages/ksv2005/yii2-loading-overlay)
+[![Latest Unstable Version](https://poser.pugx.org/ksv2005/yii2-loading-overlay/v/unstable)](https://packagist.org/packages/ksv2005/yii2-loading-overlay)
+[![Total Downloads](https://poser.pugx.org/ksv2005/yii2-loading-overlay/downloads)](https://packagist.org/packages/ksv2005/yii2-loading-overlay)
+[![License](https://poser.pugx.org/ksv2005/yii2-loading-overlay/license)](https://packagist.org/packages/ksv2005/yii2-loading-overlay)
 
 Виджет предназначен для наложения картинки-лоадера на блок, при обработке Ajax запроса.
 
@@ -23,14 +23,14 @@ Pjax с произвольным блоком | ![Pjax с произвольны
 
 Запустить команду
 ``` json
-php composer.phar require --prefer-dist timurmelnikov/yii2-loading-overlay "~1.0.0"
+php composer.phar require --prefer-dist ksv2005/yii2-loading-overlay "~1.0.0"
 ```
 
 Добавить в секцию "require" файла composer.json:
 ``` json
 {
     "require": {
-        "timurmelnikov/yii2-loading-overlay": "~1.0.0"
+        "ksv2005/yii2-loading-overlay": "~1.0.0"
     }
 }
 ```
@@ -44,7 +44,7 @@ php composer.phar require --prefer-dist timurmelnikov/yii2-loading-overlay "~1.0
 
 В представлении, где будет использоваться yii2-loading-overlay, подключить:
 ``` php
-timurmelnikov\widgets\LoadingOverlayAsset::register($this);
+ksv2005\widgets\LoadingOverlayAsset::register($this);
 ```
 
 Далее, использовать обычный JavaScript, для отображения/скрытия jQuery LoadingOverlay, руководствуясь  [документацией jQuery LoadingOverlay](https://gasparesganga.com/labs/jquery-loading-overlay/), например так:
@@ -87,7 +87,7 @@ $this->registerJs($script, yii\web\View::POS_READY);
 
 В представлении, где будет использоваться Pjax, подключить:
 ``` php
-use timurmelnikov\widgets\LoadingOverlayPjax;
+use ksv2005\widgets\LoadingOverlayPjax;
 ```
 
 Использовать, вместо стандартного Pjax, "оборачивая" в него, например GridView (Скриншот 1):

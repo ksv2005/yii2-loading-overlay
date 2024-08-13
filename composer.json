@@ -1,5 +1,5 @@
 {
-    "name": "timurmelnikov/yii2-loading-overlay",
+    "name": "ksv2005/yii2-loading-overlay",
     "description": "Yii2 виджет-обертка для использования плагина jQuery LoadingOverlay",
     "keywords": [
         "yii2",
@@ -21,7 +21,7 @@
     },
     "autoload": {
         "psr-4": {
-            "timurmelnikov\\widgets\\": ""
+            "ksv2005\\widgets\\": ""
         }
     }
 }
